@@ -17,4 +17,9 @@ class CardTest < MiniTest::Unit::TestCase
   def test_can_report_its_suit
     assert_equal "Spades", @ace_of_spades.suit
   end
+
+  def test_card_rank_comparison
+    assert @ace_of_spades > @two_of_hearts
+    refute @ace_of_spades < @two_of_hearts
+  end
 end

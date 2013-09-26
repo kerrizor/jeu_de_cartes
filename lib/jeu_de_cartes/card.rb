@@ -1,4 +1,6 @@
 class Card
+  include Comparable
+
   attr_reader :rank, :suit
 
   def initialize(suit, rank)
@@ -19,5 +21,9 @@ class Card
     else
       @rank
     end
+  end
+
+  def <=> other
+    value <=> other.value
   end
 end

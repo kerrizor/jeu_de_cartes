@@ -1,6 +1,6 @@
 # JeuDeCartes
 
-TODO: Write a gem description
+Models a basic deck of 52 cards, and the basic actions associated with it.
 
 ## Installation
 

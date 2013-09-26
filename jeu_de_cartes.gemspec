@@ -8,9 +8,10 @@ Gem::Specification.new do |spec|
   spec.version       = JeuDeCartes::VERSION
   spec.authors       = ["Kerri Miller"]
   spec.email         = ["kerrizor@kerrizor.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{A standard deck of cards}
+  spec.summary       = %q{Models a basic deck of 52 cards, and the basic actions
+                            associated with it.}
+  spec.homepage      = "https://github.com/kerrizor/jeu_de_cartes"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

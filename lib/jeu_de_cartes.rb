@@ -1,5 +1,3 @@
-require "jeu_de_cartes/version"
 
-module JeuDeCartes
-  # Your code goes here...
-end
+require 'jeu_de_cartes/card'
+require 'jeu_de_cartes/deck'

@@ -22,4 +22,17 @@ class CardTest < MiniTest::Unit::TestCase
     assert @ace_of_spades > @two_of_hearts
     refute @ace_of_spades < @two_of_hearts
   end
+
+  def test_to_s_for_humans
+    assert_equal "2 of Hearts", @two_of_hearts.to_s
+  end
+
+  def test_to_notation_for_poker_notation
+    assert_equal "2h", @two_of_hearts.to_notation
+  end
+
+  def test_to_symbol_to_display_utf_8
+    assert_equal "2♥", @two_of_hearts.to_symbol
+  end
+
 end

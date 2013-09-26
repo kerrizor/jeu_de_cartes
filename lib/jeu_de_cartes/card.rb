@@ -3,6 +3,11 @@ class Card
 
   attr_reader :rank, :suit
 
+  SUIT_SYMBOL = { club:    '♣',
+                  diamond: '♦',
+                  heart:   '♥',
+                  spade:   '♠' }
+
   def initialize(suit, rank)
     @suit = suit
     @rank = rank
@@ -29,5 +34,13 @@ class Card
 
   def to_s
     "#{@rank} of #{@suit}"
+  end
+
+  def to_notation
+    "#{rank}#{@suit.downcase.split('').first}"
+  end
+
+  def to_symbol
+    "#{@rank}#{SUIT_SYMBOL[@suit.downcase.chop.to_sym]}"
   end
 end

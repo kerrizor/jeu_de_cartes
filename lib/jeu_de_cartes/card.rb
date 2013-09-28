@@ -7,6 +7,8 @@ class Card
                   diamond: '♦',
                   heart:   '♥',
                   spade:   '♠' }
+  SUITS = %w(club diamond heart spade)
+  RANKS = [*2..10, "Jack", "Queen", "Ace"]
 
   def initialize(suit, rank)
     @suit = suit

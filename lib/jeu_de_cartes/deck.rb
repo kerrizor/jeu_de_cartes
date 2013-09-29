@@ -5,8 +5,12 @@ class Deck
     @cards = generate_cards
   end
 
-  def shuffle
+  def shuffle!
     cards.shuffle!
+  end
+
+  def cut!
+    cards.rotate!(26)
   end
 
   private

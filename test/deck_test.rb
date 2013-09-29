@@ -13,8 +13,8 @@ class DeckTest < MiniTest::Unit::TestCase
     refute_equal @deck.cards.clone, @deck.shuffle!
   end
 
-  def test_cut!
-    assert_change(lambda { @deck.cards.first }) { @deck.shuffle!.cut! }
+  def test_cut_splits_a_deck_in_half
+    assert_same @deck.cards.first, @deck.cut!.cards[@deck.card_count/2]
   end
 
   def test_deal_returns_one_card

@@ -7,10 +7,14 @@ class Deck
 
   def shuffle!
     cards.shuffle!
+
+    self
   end
 
   def cut!
-    cards.rotate!(26)
+    cards.rotate!(cards.length / 2)
+
+    self
   end
 
   private

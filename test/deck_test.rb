@@ -14,6 +14,6 @@ class DeckTest < MiniTest::Unit::TestCase
   end
 
   def test_cut!
-    assert_change(lambda { @deck.cards.first }) { @deck.cut! }
+    assert_change(lambda { @deck.cards.first }) { @deck.shuffle!.cut! }
   end
 end

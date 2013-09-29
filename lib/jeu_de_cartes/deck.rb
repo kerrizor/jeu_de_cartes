@@ -12,9 +12,17 @@ class Deck
   end
 
   def cut!
-    cards.rotate!(cards.length / 2)
+    cards.rotate!(card_count / 2)
 
     self
+  end
+
+  def deal!
+    cards.shift
+  end
+
+  def card_count
+    cards.length
   end
 
   private

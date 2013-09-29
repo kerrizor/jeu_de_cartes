@@ -1,5 +1,7 @@
 # JeuDeCartes
 
+[<img src="https://secure.travis-ci.org/kerrizor/jeu_de_cartes.png" />](http://travis-ci.org/kerrizor/jeu_de_cartes)
+
 Models a basic deck of 52 cards, and the basic actions associated with it.
 
 ## Installation

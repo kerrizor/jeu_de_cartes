@@ -2,7 +2,7 @@ require 'test_helper'
 
 class DeckTest < MiniTest::Unit::TestCase
   def setup
-    @deck = Deck.new
+    @deck = JeuDeCartes::Deck.new
   end
 
   def test_builds_a_deck
@@ -20,7 +20,7 @@ class DeckTest < MiniTest::Unit::TestCase
   def test_deal_returns_one_card
     card = @deck.deal!
 
-    assert_instance_of Card, card
+    assert_instance_of JeuDeCartes::Card, card
   end
 
   def test_deal_removes_one_card

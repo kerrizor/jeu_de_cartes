@@ -4,8 +4,8 @@ require 'test_helper'
 
 class CardTest < MiniTest::Unit::TestCase
   def setup
-    @ace_of_spades = Card.new("Spades", "Ace")
-    @two_of_hearts = Card.new("Hearts", 2)
+    @ace_of_spades = JeuDeCartes::Card.new("Spades", "Ace")
+    @two_of_hearts = JeuDeCartes::Card.new("Hearts", 2)
   end
 
   def test_can_calculate_value

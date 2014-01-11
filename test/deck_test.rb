@@ -14,7 +14,7 @@ class DeckTest < MiniTest::Unit::TestCase
   end
 
   def test_cut_splits_a_deck_in_half
-    assert_same @deck.cards.first, @deck.cut!.cards[@deck.card_count/2]
+    refute_same @deck.cards.first, @deck.cut!.cards.first
   end
 
   def test_deal_returns_one_card

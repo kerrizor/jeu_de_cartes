@@ -13,7 +13,7 @@ module JeuDeCartes
     end
 
     def cut!
-      cards.rotate!(card_count / 2)
+      cards.rotate!(random_location_in_deck(card_count))
 
       self
     end
@@ -27,6 +27,11 @@ module JeuDeCartes
     end
 
     private
+    def random_location_in_deck(card_count)
+      dist = Rubystats::NormalDistribution.new(card_count, 5)
+      dist.rng.to_i
+    end
+
     def generate_cards
       cards = []
 

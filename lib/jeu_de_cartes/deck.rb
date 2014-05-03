@@ -35,9 +35,10 @@ module JeuDeCartes
     private
 
     def random_location_in_deck(card_count)
-      dist = Rubystats::NormalDistribution.new(card_count, 5)
-      dist.rng.to_i -= 1 if dist.rng.to_i == 52
-      dist.rng.to_i
+      dist = Rubystats::NormalDistribution.new(card_count, 5).rng.to_i
+
+      dist -= 1 if dist == 52
+      dist
     end
 
     def generate_cards

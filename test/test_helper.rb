@@ -1,4 +1,7 @@
 require './lib/jeu_de_cartes'
+
+require 'byebug'
+
 require 'minitest/autorun'
 require 'minitest/unit'
 require 'minitest/pride'

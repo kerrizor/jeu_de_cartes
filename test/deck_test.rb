@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class DeckTest < MiniTest::Unit::TestCase
+class DeckTest < MiniTest::Test
   def setup
     @deck = JeuDeCartes::Deck.new
   end

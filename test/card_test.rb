@@ -2,7 +2,7 @@
 
 require 'test_helper'
 
-class CardTest < MiniTest::Unit::TestCase
+class CardTest < MiniTest::Test
   def setup
     @ace_of_spades = JeuDeCartes::Card.new("Spades", "Ace")
     @two_of_hearts = JeuDeCartes::Card.new("Hearts", 2)
